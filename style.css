@@ -34,7 +34,7 @@ body {
 }
 
 #nleft1 h2 {
-    color: rgb(225, 99, 218);
+    color: rgb(116, 41, 201);
     font-weight: 400;
 }
 
@@ -74,7 +74,7 @@ body {
 
 #left1 h1 {
     font-size: 70px;
-    color: rgba(255, 255, 255, 0.872);
+    color: rgba(255, 255, 255, 0.728);
     line-height: 80px;
     font-weight: 600px;
 
@@ -82,22 +82,23 @@ body {
 
 #left1 h2 {
     font-size: 70px;
-    color: white;
+    color: rgba(207, 173, 246, 0.878);
+    text-shadow: 5px 5px 10px rgb(116, 41, 201);
     line-height: 80px;
     font-weight: 600px;
 }
 
 #left1 p {
-    color: white;
+    color: rgba(255, 255, 255, 0.594);
+    text-shadow: 5px 5px 15px rgb(129, 43, 226);
     font-size: 20px;
     padding: 20px 0px;
-    font-weight: 600;
+    font-weight: 900;
     letter-spacing: 2px;
 }
 
 #right1 {
     width: 50%;
     height: 100%;
-    background-color: rgb(209, 209, 74);
     top: 20%;
 }
