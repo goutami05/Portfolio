@@ -139,6 +139,7 @@ body {
 }
 
 .box2 {
+    position: relative;
     flex: 0 0 calc(33.33% - 30px);
     min-width: 280px;
     height: 500px;
@@ -153,7 +154,7 @@ body {
 .box2:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 25px rgba(115, 164, 241, 0.5);
-    background: linear-gradient(135deg, #102046, #96b3e2);
+    background: linear-gradient(135deg, #2b47886b, #96b3e2);
     cursor: pointer;
 }
 
@@ -170,4 +171,44 @@ body {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+
+.contributions2 {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    top: 8%;
+    left: 40%;
+    background: linear-gradient(90deg, #3a77da, #edeef0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 30px;
+
+}
+
+.positions2 {
+    position: absolute;
+    color: white;
+    top: 22%;
+    left: 40%;
+    font-size: 20px;
+
+}
+
+.time2 {
+    position: absolute;
+    color: white;
+    top: 29%;
+    left: 40%;
+}
+
+.about2 {
+    position: absolute;
+    color: white;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
 }
