@@ -212,3 +212,30 @@ body {
     transform: translate(-50%, -50%);
     font-size: 20px;
 }
+
+#body3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.icon3 {
+    position: relative;
+    flex: 0 0 calc(33.33% - 30px);
+    min-width: 20px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 5px 5px rgba(219, 166, 237, 0.5);
+
+}
+
+.icon3 img {
+    width: 60px;
+    height: 60px;
+    box-shadow: 10px 10px 20px rgba(115, 163, 241, 0.985);
+    border-radius: 35px;
+}
