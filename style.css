@@ -44,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 25px;
-    color: #E2E8F0;
+    color: white;
     gap: 40px;
 }
 
@@ -82,7 +82,7 @@ body {
 
 #left1 h1 {
     font-size: 70px;
-    color: rgba(226, 232, 240, 0.7);
+    color: white;
     line-height: 80px;
     font-weight: 600;
 }
@@ -104,8 +104,8 @@ body {
     background-clip: text;
     font-size: 20px;
     padding: 20px 0;
-    font-weight: 900;
-    letter-spacing: 2px;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
 #right1 {
@@ -238,4 +238,73 @@ body {
     height: 60px;
     box-shadow: 10px 10px 20px rgba(115, 163, 241, 0.985);
     border-radius: 35px;
+}
+
+#box4 {
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+#left4,
+#right4 {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 80px;
+}
+
+.institute {
+    position: absolute;
+    background: linear-gradient(90deg, #ad622099, #e6c04d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 50%;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.degree {
+    position: absolute;
+    font-size: 25px;
+    top: 30%;
+    left: 50%;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, #ebecee, #edf0f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.date {
+    position: absolute;
+    font-size: 20px;
+    top: 40%;
+    left: 50%;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, #3a77da, #edeef0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.branch {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, #3a77da, #edeef0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
