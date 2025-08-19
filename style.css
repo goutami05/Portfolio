@@ -1,9 +1,11 @@
+/* Reset default styles for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base styles for html and body */
 html,
 body {
     width: 100%;
@@ -11,6 +13,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* General section/page layout */
 .page {
     position: relative;
     width: 100%;
@@ -19,6 +22,7 @@ body {
     padding: 10px 70px;
 }
 
+/* ================= NAVBAR ================= */
 #nav {
     display: flex;
     justify-content: space-between;
@@ -32,6 +36,7 @@ body {
     padding: 20px;
 }
 
+/* Gradient text for logo/name */
 #nleft1 h2 {
     background: linear-gradient(100deg, #12284a, #4f98f7);
     -webkit-background-clip: text;
@@ -40,6 +45,7 @@ body {
     font-weight: 500;
 }
 
+/* Right side of navbar (links + icon) */
 #nright1 {
     display: flex;
     align-items: center;
@@ -53,6 +59,7 @@ body {
     text-decoration: none;
 }
 
+/* Hover effect on navbar links */
 #nright1 a:hover {
     background: linear-gradient(100deg, #3B82F6, #dee4ec);
     -webkit-background-clip: text;
@@ -61,12 +68,13 @@ body {
     transition: 0.3s ease;
 }
 
+/* Theme toggle icon */
 #nright1 i {
     padding: 6px;
     cursor: pointer;
 }
 
-
+/* ================= HERO SECTION ================= */
 #bottom1 {
     padding: 80px 20px;
     display: flex;
@@ -87,6 +95,7 @@ body {
     font-weight: 600;
 }
 
+/* Gradient effect on name */
 #left1 h2 {
     font-size: 70px;
     background: linear-gradient(90deg, #2a6ad8, #eeeff1);
@@ -97,6 +106,7 @@ body {
     font-weight: 900;
 }
 
+/* Subtitle text under name */
 #left1 p {
     background: linear-gradient(90deg, #3a77da, #edeef0);
     -webkit-background-clip: text;
@@ -113,6 +123,7 @@ body {
     height: 100%;
 }
 
+/* ================= SECTION HEADINGS ================= */
 #nav2 {
     position: relative;
     width: 100%;
@@ -131,6 +142,7 @@ body {
     background-clip: text;
 }
 
+/* ================= EXPERIENCE SECTION ================= */
 #body2 {
     display: flex;
     flex-wrap: wrap;
@@ -138,6 +150,7 @@ body {
     gap: 30px;
 }
 
+/* Experience cards */
 .box2 {
     position: relative;
     flex: 0 0 calc(33.33% - 30px);
@@ -151,6 +164,7 @@ body {
     transition: 0.3s ease;
 }
 
+/* Hover effect on cards */
 .box2:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 25px rgba(115, 164, 241, 0.5);
@@ -158,6 +172,7 @@ body {
     cursor: pointer;
 }
 
+/* Icons inside cards */
 .icon2 {
     width: 80px;
     height: 80px;
@@ -173,6 +188,7 @@ body {
     object-fit: contain;
 }
 
+/* Experience text styles */
 .contributions2 {
     position: absolute;
     color: white;
@@ -185,7 +201,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 30px;
-
 }
 
 .positions2 {
@@ -194,7 +209,6 @@ body {
     top: 22%;
     left: 40%;
     font-size: 20px;
-
 }
 
 .time2 {
@@ -213,6 +227,7 @@ body {
     font-size: 20px;
 }
 
+/* ================= SKILLS SECTION ================= */
 #body3 {
     display: flex;
     flex-wrap: wrap;
@@ -220,6 +235,7 @@ body {
     gap: 50px;
 }
 
+/* Skill logo containers */
 .icon3 {
     position: relative;
     flex: 0 0 calc(33.33% - 30px);
@@ -230,7 +246,6 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 6px 5px 5px rgba(219, 166, 237, 0.5);
-
 }
 
 .icon3 img {
@@ -240,6 +255,7 @@ body {
     border-radius: 35px;
 }
 
+/* ================= EDUCATION SECTION ================= */
 #box4 {
     display: flex;
     width: 100%;
@@ -256,6 +272,7 @@ body {
     margin-top: 80px;
 }
 
+/* Institute/College name */
 .institute {
     position: absolute;
     background: linear-gradient(90deg, #ad622099, #e6c04d);
@@ -267,6 +284,7 @@ body {
     font-weight: 900;
 }
 
+/* Degree info */
 .degree {
     position: absolute;
     font-size: 25px;
@@ -280,6 +298,7 @@ body {
     background-clip: text;
 }
 
+/* Duration */
 .date {
     position: absolute;
     font-size: 20px;
@@ -291,10 +310,9 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-
 }
 
+/* Branch/stream */
 .branch {
     position: absolute;
     font-size: 20px;
@@ -306,5 +324,4 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
