@@ -278,14 +278,14 @@ body {
     height: 600px;
 }
 
-#left4,
 #right4 {
     position: relative;
     width: 50%;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
-    margin-top: 80px;
+    margin-top: 60px;
+    margin-left: 380px;
 }
 
 /* Institute/College name */
@@ -340,6 +340,11 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#left4 {
+    height: 30%;
+    width: 25%;
 }
 
 /* Hidden state */
