@@ -11,9 +11,11 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 /* General section/page layout */
+
 .page {
     position: relative;
     width: 100%;
@@ -238,8 +240,8 @@ body {
 /* Skill logo containers */
 .icon3 {
     position: relative;
-    flex: 0 0 calc(33.33% - 30px);
-    min-width: 20px;
+    flex: 0 0 calc(40% - 10px);
+    min-width: 40px;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -249,11 +251,25 @@ body {
 }
 
 .icon3 img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     box-shadow: 10px 10px 20px rgba(115, 163, 241, 0.985);
-    border-radius: 35px;
+    border-radius: 10px;
 }
+
+/* Default hidden state */
+.icon3 {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+    transition: all 0.6s ease-out;
+}
+
+/* Visible state */
+.icon3.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
 
 /* ================= EDUCATION SECTION ================= */
 #box4 {
@@ -324,6 +340,20 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* Hidden state */
+#right4>.icon4 {
+    opacity: 0;
+    transform: translateX(100px);
+    /* start off to the right */
+    transition: all 0.6s ease-out;
+}
+
+/* Visible state */
+#right4>.icon4.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* Project Section Container */
@@ -420,7 +450,7 @@ body {
 /* Contact Section */
 #contact {
     padding: 80px 20px;
-    background: #000;
+    background: #052650ba;
     /* Dark background to match your theme */
     color: #fff;
 }
@@ -553,4 +583,19 @@ body {
 
 .contact-image img:hover {
     transform: scale(1.05);
+}
+
+/* Default hidden state */
+.box2,
+.box5 {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+    transition: all 0.6s ease-out;
+}
+
+/* Visible state */
+.box2.show,
+.box5.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
