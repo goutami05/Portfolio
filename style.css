@@ -599,3 +599,12 @@ body {
     opacity: 1;
     transform: translateY(0) scale(1);
 }
+
+.side-video {
+
+    width: 230%;
+    height: 230%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
