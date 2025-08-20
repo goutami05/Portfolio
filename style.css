@@ -1,11 +1,9 @@
-/* Reset default styles for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base styles for html and body */
 html,
 body {
     width: 100%;
@@ -606,10 +604,225 @@ body {
 }
 
 .side-video {
-
     width: 230%;
     height: 230%;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4)
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+
+    /* Page padding */
+    .page {
+        padding: 10px 20px;
+    }
+
+    /* Navbar stacking */
+    #nav {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    #nleft1 {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    #nright1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    /* Hero section stacking */
+    #bottom1 {
+        flex-direction: column;
+        padding: 40px 10px;
+        height: auto;
+    }
+
+    #left1,
+    #right1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #left1 h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #left1 h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    #left1 p {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    #right1 .side-video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Experience cards */
+    #body2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box2 {
+        flex: 0 0 90%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contributions2,
+    .positions2,
+    .time2,
+    .about2 {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /* Skills logos */
+    #body3 {
+        gap: 20px;
+    }
+
+    .icon3 {
+        flex: 0 0 20%;
+        height: auto;
+    }
+
+    .icon3 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Education section */
+    #box4 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #left4 {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    #right4 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #right4 .institute,
+    #right4 .degree,
+    #right4 .date,
+    #right4 .branch {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /* Projects section */
+    .body5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box5 {
+        width: 90%;
+        min-height: auto;
+    }
+
+    .image5 {
+        height: 200px;
+    }
+
+    /* Contact section */
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 1024px) {
+    #bottom1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #left1,
+    #right1 {
+        width: 100%;
+    }
+
+    #left1 h1 {
+        font-size: 50px;
+    }
+
+    #left1 h2 {
+        font-size: 60px;
+    }
+
+    #body2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box2 {
+        flex: 0 0 45%;
+        margin-bottom: 20px;
+    }
+
+    #body3 .icon3 {
+        flex: 0 0 25%;
+    }
+
+    #box4 {
+        flex-direction: column;
+    }
+
+    #left4 {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    #right4 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .body5 .box5 {
+        width: 70%;
+    }
 }
